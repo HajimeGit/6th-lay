@@ -1,0 +1,105 @@
+.services{
+  width: 100%;
+  background-color: $lightgreen;
+  color: $white;
+  padding: 102px 0 126px 0;
+  @include media_pudding;
+  .services_container{
+    @include container_mixin;
+    display: flex;
+    flex-direction: column;
+    .services_title{
+      @include media_title;
+      margin:0 0 6px 0;
+      @include large_title;
+      padding-right: 8px;
+    }
+    .services_line{
+      @include line_mixin(87px,4px,#000000,0.15);
+    }
+    .services_text{
+      margin-top: 17px;
+      font-size: 18px;
+      font-weight: 400;
+      text-align: center;
+      letter-spacing: 0.36px;
+      line-height: normal;
+      margin-left: 2px;
+      .services_text_first{
+        letter-spacing: 0.40px;
+      }
+      .services_text_second{
+        margin-left: 2px;
+        letter-spacing: 0.33px;
+      }
+    }
+    .services_list {
+      row-gap: 50px;
+      padding: 0 10px;
+      margin-top: 58px;
+      --bs-gutter-x: 0;
+      .column_item {
+        @include column__item;
+        .services_item_title {
+          @media (max-width: 576px) {
+            margin: 20px 0 0 1px;
+          }
+          text-align: center;
+          margin: 47px 0 0 0;
+          font-size: 24px;
+          font-weight: 700;
+          letter-spacing: 0.48px;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+        .services_item_text {
+          margin: 13px 0 0 2px;
+          max-width: 197px;
+          font-size: 16px;
+          font-weight: 300;
+          font-style: normal;
+          text-align: center;
+          letter-spacing: 0.32px;
+          line-height: normal;
+        }
+      }
+      .services_item_1 {
+        .services_item_img {
+          margin: 4px 0 0 13px;
+        }
+        .services_item_title {
+          @media (max-width: 576px) {
+            margin: 20px 0 0 1px;
+          }
+          margin: 49px 0 0 1px;
+        }
+
+      }
+      .services_item_2 {
+        .services_item_img {
+          @media (max-width: 576px) {
+            margin: 20px 0 0 11px;
+          }
+          margin: -1px 0 0 11px;
+        }
+      }
+      .services_item_3 {
+        .services_item_img {
+          margin: 4px 8px 0 0;
+        }
+      }
+      .services_item_4 {
+
+        .services_item_img {
+          margin: 0 5px 0 0;
+        }
+        .services_item_title {
+          @media (max-width: 576px) {
+            margin: 20px 0 0 1px;
+          }
+          margin: 43px 0 0 -1px;
+        }
+      }
+    }
+  }
+}

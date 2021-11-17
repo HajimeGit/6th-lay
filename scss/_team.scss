@@ -1,0 +1,194 @@
+.team{
+  width: 100%;
+  background-color: $lightgrey;
+  color: $darkblue;
+  padding: 102px 0 125px 0;
+  @include media_pudding;
+  .team_container {
+    @include container_mixin;
+    display: flex;
+    flex-direction: column;
+    .team_title {
+      @include media_title;
+      text-align: center;
+      margin: 0 0 7px  2px;
+      font-size: 41px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: 3.39px;
+      line-height: normal;
+    }
+    .team_line {
+      @include line_mixin(87px,4px,#bdd1df,0.75);
+    }
+    .team_text {
+      margin: 19px 0 0 1px;
+      font-size: 19px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 26.84px;
+      text-align: center;
+    }
+    .team_list{
+      @media (max-width:480px) {
+        margin-top: 40px;
+      }
+      padding: 0 10px;
+      margin-top: 77px;
+      --bs-gutter-x: 0;
+      .column_item{
+        .team_item_img{
+          img{
+            border-radius: 50%;
+          }
+        }
+        @media (max-width:1023px) {
+          margin-bottom: 70px;
+          }
+        @include column__item;
+        .team_item_title{
+          margin: 28px 0 0 0;
+          color: $closeblack;
+          font-size: 24px;
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+          letter-spacing: 0.48px;
+          line-height: normal;
+        }
+        .team_item_position{
+          margin:0;
+          color: $blue;
+          font-size: 16px;
+          font-style: normal;
+          letter-spacing: 0.32px;
+          line-height: normal;
+          text-align: center;
+        }
+        .team_item_text{
+          margin:20px 0 0 0;
+          max-width: 206px;
+          font-size: 16px;
+          font-weight: 300;
+          font-style: normal;
+          letter-spacing: 0.32px;
+          line-height: normal;
+        }
+        .icon{
+          border-radius: 50%;
+          background-color: $icon;
+          width: 32px;
+          height: 32px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          &:hover{
+            background-color: $blue;
+          }
+          &:not(:last-child){
+            margin-right: 12px;
+          }
+        }
+        .icon_items{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 27px auto 0;
+          .facebook_icon{
+            i{
+              font-size: 15px;
+              color: $white;
+              &:before{
+                content: "\f39e";
+              }
+            }
+          }
+          .twitter_icon{
+            i{
+              font-size: 16px;
+              color: $white;
+              &:before{
+                content: "\f099";
+              }
+            }
+          }
+          .linkedin_icon{
+            i{
+              font-size: 17px;
+              color: $white;
+              &:before{
+                content: "\f0e1";
+              }
+            }
+          }
+          .email_icon{
+            i{
+              font-size: 16px;
+              color: $white;
+              &:before{
+                content: "\f0e0";
+              }
+            }
+          }
+        }
+      }
+      .team_item_1{
+        .team_item_text{
+          margin: 18px 0 0 0;
+        }
+        .team_item_icons_1{
+          margin: 29px auto 0;
+        }
+      }
+      .team_item_4{
+        .team_item_title{
+          margin-left: 12px;
+          letter-spacing: 0.3px;
+        }
+        .team_item_position{
+          margin: 1px 0 0 12px;
+        }
+        .team_item_text{
+          margin: 19px 0 0 12px;
+        }
+      }
+    }
+  }
+}
+.slick-track{
+  display: flex;
+}
+.slick-list{
+  overflow: hidden;
+}
+.slick-dots{
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  border: none;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  @media (max-width:612px) {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .slick-active{
+    button{
+      background-color: #666666;
+    }
+  }
+  li{
+    list-style: none;
+    margin: 0 8px;
+    button{
+      font-size: 0;
+      width: 12px;
+      height: 12px;
+      border: none;
+      background-color: #b3b3b3;
+      border-radius: 50%;
+    }
+  }
+}

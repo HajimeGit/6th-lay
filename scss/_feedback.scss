@@ -1,0 +1,201 @@
+.feedback{
+  @include all_wrapper($pink,$white);
+  padding:102px 0 127px 0;
+  @include media_pudding;
+  .feedback_container{
+    @include container_mixin;
+    .feedback_title{
+      @include large_title;
+      margin: 0 0 6px 6px;
+      @include media_title;
+    }
+    .feedback_line{
+      @include line_mixin(87px,4px, #000000,0.15);
+    }
+    .feedback_text{
+      margin: 18px 0 0 2px;
+      font-size: 18px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: 0.36px;
+      line-height: 26px;
+      text-align: center;
+    }
+    .feedback_list{
+      @media (max-width: 767px) {
+        margin: 25px 0 0 0;
+      }
+      margin: 64px 0 0 0;
+      padding: 0 10px;
+      display: flex;
+      flex-direction: row;
+      .feedback_item{
+
+        @media (max-width: 767px) {
+          flex-direction:column;
+          align-items: center;
+        }
+        padding: 0 10px;
+        display: flex;
+        flex-direction: row;
+
+        .feedback_item_info{
+          @media (max-width: 767px) {
+            flex-direction:column;
+            align-items: center;
+            padding-left: 0;
+          }
+          display: flex;
+          flex-direction: column;
+          padding-left: 50px;
+          .feedback_item_info_text{
+            @media (max-width: 767px) {
+              text-align: center;
+            }
+            font-size: 21px;
+            font-style: italic;
+            letter-spacing: 0.7px;
+            line-height: 31.2px;
+            text-align: left;
+          }
+          .feedback_item_info_name{
+            font-size: 24px;
+            font-weight: 700;
+            font-style: normal;
+            letter-spacing: 0.48px;
+            line-height: 26px;
+            text-align: left;
+            text-transform: uppercase;
+          }
+          .feedback_item_info_position{
+            font-size: 18px;
+            font-weight: 400;
+            font-style: normal;
+            letter-spacing: 0.46px;
+            line-height: 26px;
+            text-align: left;
+            color: $gold;
+          }
+        }
+      }
+      .feedback_list_item_1{
+        @media (max-width: 1200px) {
+          margin:20px;
+          padding: 0;
+        }
+        .feedback_item_img{
+          img{
+            margin-top: 2px;
+          }
+        }
+        .feedback_item_info_text {
+          max-width: 326px;
+          margin: 6px 0 0px -2px;
+          letter-spacing: 0.74px;
+        }
+        .feedback_item_info_name {
+          margin: 22px 0 0px -1px;
+        }
+        .feedback_item_info_position {
+          margin: 1px 0 0 0;
+        }
+      }
+      .feedback_list_item_2 {
+        @media (max-width: 1200px) {
+          margin:20px;
+          padding: 0;
+        }
+        padding-left: 39px;
+
+        .feedback_item_img {
+          img {
+
+            margin-top: 2px;
+          }
+        }
+        .feedback_item_info{
+          @media (max-width: 767px) {
+            padding-left: 0;
+          }
+          padding-left: 48px;
+          .feedback_item_info_text {
+            max-width: 350px;
+            margin: 6px 0 0 0;
+
+          }
+
+          .feedback_item_info_name {
+            margin: 22px 0 0px -1px;
+          }
+
+          .feedback_item_info_position {
+            margin: 1px 0 0 0;
+          }
+        }
+        }
+
+
+        .feedback_list_item_3 {
+          @media (max-width: 1200px) {
+            margin:20px;
+            padding: 0;
+          }
+
+          margin-top: 140px;
+
+          .feedback_item_img{
+            img{
+              margin-left: 1px;
+            }
+          }
+            .feedback_item_info_text {
+              max-width: 350px;
+              margin: 4px 0 0 0;
+            }
+
+            .feedback_item_info_name {
+              margin: 23px 0 0 -1px;
+            }
+
+            .feedback_item_info_position {
+              margin-top: 1px;
+              letter-spacing: 0.35px;
+            }
+        }
+        .feedback_list_item_4 {
+
+          @media (max-width: 1200px) {
+            margin:20px;
+            padding: 0;
+          }
+          margin-top: 140px;
+          padding-left: 39px;
+          .feedback_item_info{
+            @media (max-width: 767px) {
+              padding-left: 0;
+            }
+            padding-left: 46px;
+            .feedback_item_info_text {
+              max-width: 369px;
+              margin: 4px 0 0 0;
+            }
+            .feedback_item_info_name {
+              margin: 23px 0 0 0;
+            }
+            .feedback_item_info_position {
+              margin-top: 1px;
+              letter-spacing: 0.54px;
+            }
+          }
+        }
+      img{
+        border-radius: 50%;
+        width: 96px;
+        @media (max-width: 767px) {
+          width: 120px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

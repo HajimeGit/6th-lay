@@ -1,0 +1,55 @@
+// rewrite bootstrap files
+@import "_variables";
+@import "mixins";
+// bootstrap needs files
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/_variables";
+@import "../node_modules/bootstrap/scss/_mixins";
+@import "../node_modules/bootstrap/scss/bootstrap-grid";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/dropdown";
+//scss files
+@import "normalize";
+@import "fonts";
+@import "header";
+@import "services";
+@import "team";
+@import "skills";
+@import "display";
+@import "feedback";
+@import "form";
+@import "footer";
+*, *::before, *::after {
+  box-sizing: border-box;
+  @media (max-width: 992px) {
+    scroll-margin-top:55px;
+  }
+
+}
+a{
+  color: inherit;
+  text-decoration: none;
+}
+p{
+  padding: 0;
+  margin: 0;
+}
+html{
+  scroll-behavior: smooth;
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: 'Titillium Web',sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+main{
+  display: block;
+}
