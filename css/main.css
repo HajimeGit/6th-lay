@@ -7653,7 +7653,7 @@ header .header_container .header_body .header_menu .header_list {
 }
 @media (max-width: 991px) {
   header .header_container .header_body .header_menu .header_list {
-    margin: 0;
+    margin: 15px auto;
   }
 }
 header .header_container .header_body .header_menu .header_list .header_list_item {
